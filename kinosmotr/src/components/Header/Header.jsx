@@ -21,15 +21,26 @@ export const Header = () => {
 
 
     return (
-        <div className = "header__container">
-            <div className = "header__wrapper">
-                <div className = "header__logo-container">
-                    KinoSmotr
-                </div>
-                <div class="form-check form-switch">
-                    <input onClick={changeBg} class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                </div>
-            </div>
+      <div className="header__container">
+        <div className="header__wrapper">
+          <div className="header__logo-container">KinoSmotr</div>
+          <div className="header__search-movie">
+            <input 
+                className="search-movie" 
+                placeholder="Поиск..." 
+            />
+            <button className="search-movie-btn">Найти</button>
+          </div>
+          <div class="form-check form-switch">
+            <input
+              onClick={changeBg}
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+          </div>
         </div>
-    )
+      </div>
+    );
 }
